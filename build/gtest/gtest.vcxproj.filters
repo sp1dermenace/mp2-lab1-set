@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Новая папка (3)\asd\lab1\mp2-lab1-set\gtest\gtest-all.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Новая папка (3)\asd\lab1\mp2-lab1-set\gtest\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{329F36A8-024A-37E7-BA1B-4A578F1FCD23}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
