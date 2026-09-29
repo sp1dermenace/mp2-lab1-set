@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Solution>
+	<Configurations>
+		<BuildType Name="Debug"/>
+		<BuildType Name="Release"/>
+		<Platform Name="x64"/>
+	</Configurations>
+	<Project Path="gtest/gtest.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="171ced02-b190-3045-b547-c9b6300e9e59">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="samples/sample_prime_numbers.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="70a716ce-7514-38d3-bd95-ee65687f5cbf">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="src/set.vcxproj"/>
+	</Project>
+	<Project Path="src/set.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="1acc4d4a-adad-3328-bfdf-47951a1b2b15">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="test/test_set.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="40847f0c-1ab3-3e56-9c24-001a2de7fbc8">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="gtest/gtest.vcxproj"/>
+		<BuildDependency Project="src/set.vcxproj"/>
+	</Project>
+	<Folder Name="/CMakePredefinedTargets/">
+		<Project Path="ALL_BUILD.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="247bb5d1-e6a8-3afb-b55f-56746f22cc9d" DefaultStartup="true">
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+			<BuildDependency Project="gtest/gtest.vcxproj"/>
+			<BuildDependency Project="samples/sample_prime_numbers.vcxproj"/>
+			<BuildDependency Project="src/set.vcxproj"/>
+			<BuildDependency Project="test/test_set.vcxproj"/>
+			<Build Solution="Debug|*" Project="false"/>
+			<Build Solution="Release|*" Project="false"/>
+		</Project>
+		<Project Path="ZERO_CHECK.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="d4a6d70f-0e87-3b3b-bb49-e8771ce03a77"/>
+	</Folder>
+</Solution>
